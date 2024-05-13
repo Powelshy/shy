@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>The Patrick School</title>
+</head>
+<body>
+    <header class="d-flex text-center flex-column  mt-2 w-25 ">
+        <div class="">
+            <input class="h-25" type="text" name="studentID">
+        </div>
+            <p >
+                Student ID Number <br>
+                (Official Use Only)
+            </p>
+        </div>
+    </header>
+    <section class="d-flex flex-column text-center">
+        <h1 class="text-danger fw-bold">The Patrick School</h1>
+        <h3>"Providing Quality, Affordable, and Flexible Summer School Opportunities for All Students"</h3>
+        <h2 class="text-success"><u>STUDENT REGISTRATION FORMS</u></h2> 
+    </section>
+    <section class="d-flex text-end mx-3 mt-3 justify-content-end">
+        <div>
+            <p class="m-0">
+                <strong>Select Desired Course/Campus</strong>
+            </p>
+            <select name="campus">
+                <option value="-">-</option>
+                <option value="on-site">On-Site</option>
+                <option value="virtual">Virtual School</option>
+            </select>
+        </div>
+    </section>
+    <main class="d-flex flex-column align-items-center mx-5 mb-5 mt-2">
+        <div class="p-3">
+            <div class="pb-3">
+                <label for="session"><strong>Session:</strong></label>
+                <input type="text" name="session" >
+            </div>
+            <div class="pb-3 d-flex">
+                <label for="studentLastName"><strong>Student Last Name:</strong></label>
+                <input type="text" name="studentLastName" class="me-3">
+                <label for="studentFirstName"><strong>First Name:</strong></label>
+                <input type="text" name="studentFirstName">
+            </div>
+            <div class="pb-3">
+                <label for="parentName"><strong>Parent/Guardian Name:</strong></label>
+                <input type="text" name="parentName">
+            </div>
+            <div class="pb-3">
+                <label for="address"><strong>Address:</strong></label>
+                <input type="text" name="address">
+            </div>
+            <div class="pb-3 d-flex">
+                <label for="homePhone"><strong>Home Phone:</strong></label>
+                <input type="text" name="homePhone" class="me-3">
+                <label for="workPhone"><strong>Work Phone:</strong></label>
+                <input type="text" name="workPhone">
+            </div>
+            <div class="pb-3 d-flex">
+                <label for="parentGuardianCell"><strong>Parent/Guardian Cell:</strong></label>
+                <input type="text" name="parentGuardianCell" class="me-3">
+                <label for="studentCell"><strong>Student Cell:</strong></label>
+                <input type="text" name="studentCell">
+            </div>
+            <div class="pb-3 d-flex">
+                <label for="pgEmail"><strong>P/G Email:</strong></label>
+                <input type="text" name="pgEmail" class="me-3">
+                <label for="studentEmaill"><strong>Student Email:</strong></label>
+                <input type="text" name="studentCell">
+            </div>
+            <div class="pb-3">
+                <label for="currentHS"><strong>Current High School You Attend:</strong></label>
+                <input type="text" name="currentHS">
+            </div>
+            <div class="pb-3">
+                <label for="gradeCompleted"><strong>Grade Just Completed:</strong></label>
+                <input type="text" name="gradeCompleted">
+            </div>
+            <div class="pb-3 d-flex">
+                <label for="counselorName"><strong>Guidance Counselor Name:</strong></label>
+                <input type="text" name="counselorName" class="me-3">
+                <label for="counselorEmail"><strong>Email:</strong></label>
+                <input type="text" name="counselorEmail">
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-center m-4">
+            <h3><strong>PLEASE REGISTER ME FOR THE FOLLOWING SUBJECTS:</strong></h3>
+            <p class="m-0">
+                Indicate (R) for review courses (60 academic hours) and indicate (O) for original credit courses (120 academic hours), (V) for
+                Virtual Courses
+                All courses listed below are offered at each campus (Rahway Day School, Elizabeth Day School and Virtual School) with the
+                exception of Italian, which is only offered at Rahway. All Courses are available as virtual.
+            </p>
+        </div>
+        <form class="d-flex">
+            <div class="mx-5">
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Language Arts</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="writing">Writing:</label>
+                        <select id="writing" name="writing">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="english1">English 1:</label>
+                        <select id="english1" name="english1">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="english2">English 2:</label>
+                        <select id="english2" name="english2">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="english3">English 3:</label>
+                        <select id="english3" name="english3">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="english4">English 4:</label>
+                        <select id="english4" name="english4">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+            
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Health Education</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="health">Health:</label>
+                        <select id="health" name="health">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="physed">Phys. Ed.:</label>
+                        <select id="physed" name="physed">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Math</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="algebra1">Algebra 1:</label>
+                        <select id="algebra1" name="algebra1">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="algebra2">Algebra 2:</label>
+                        <select id="algebra2" name="algebra2">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="businessMath">Business Math:</label>
+                        <select id="businessMath" name="businessMath">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="discreteMath">Discrete Math:</label>
+                        <select id="discreteMath" name="discreteMath">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="finiteMath">Finite Math:</label>
+                        <select id="finiteMath" name="finiteMath">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="generalMath">General Math:</label>
+                        <select id="generalMath" name="generalMath">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="geometry">Geomtetry:</label>
+                        <select id="geometry" name="geometry">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="precalc">Pre-Calculus:</label>
+                        <select id="precalc" name="precalc">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="calc">Calculus:</label>
+                        <select id="calc" name="calc">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="mx-5">
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Social Studies</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="ss">Social Studies:</label>
+                        <select id="ss" name="ss">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="usHistory1">US History 1:</label>
+                        <select id="usHistory1" name="usHistory1">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="usHistory2">US History 2:</label>
+                        <select id="usHistory2" name="usHistory2">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="worldHist">Worlds Hist.:</label>
+                        <select id="worldHist" name="worldHist">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Science</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="chemistry">Chemistry:</label>
+                        <select id="chemistry" name="chemistry">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="biology">Biology:</label>
+                        <select id="biology" name="biology">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="earthScience">Earth Science:</label>
+                        <select id="earthScience" name="earthScience">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="genScience">General Science:</label>
+                        <select id="genScience" name="genScience">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="phyScience">Physical Science:</label>
+                        <select id="phyScience" name="phyScience">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="physics">Physics:</label>
+                        <select id="physics" name="physics">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="labScience">Science (w/Lab):</label>
+                        <select id="labScience" name="labScience">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Social Sciences</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="psychology">Psycology:</label>
+                        <select id="psychology" name="psychology">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="sociology">Sociology:</label>
+                        <select id="sociology" name="sociology">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="mx-5">
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Foreign Language</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="french1">French 1:</label>
+                        <select id="french1" name="french1">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="french2">French 2:</label>
+                        <select id="french2" name="french2">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="french3">French 3:</label>
+                        <select id="french3" name="french3">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="italian1">Italian 1:</label>
+                        <select id="italian1" name="italian1">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="italian2">Italian 2:</label>
+                        <select id="italian2" name="italian2">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="italian3">Italian 3:</label>
+                        <select id="italian3" name="italian3">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="spanish1">Spanish 1:</label>
+                        <select id="spanish1" name="spanish1">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="spanish2">Spanish 2:</label>
+                        <select id="spanish2" name="spanish2">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="spanish3">Spanish 3:</label>
+                        <select id="spanish3" name="spanish3">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Religion</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="religion1">Religion 1:</label>
+                        <select id="religion1" name="religion1">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="religion2">Religion 2:</label>
+                        <select id="religion2" name="religion2">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="religion3">Religion 3:</label>
+                        <select id="religion3" name="religion3">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="mx-5">
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Other</legend>
+                    <div class="d-flex justify-content-between">
+                        <label for="driversEd">Drivers Ed.:</label>
+                        <select id="driversEd" name="driversEd">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="weightTraining">Weight Training:</label>
+                        <select id="weightTraining" name="weightTraining">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="basketball">Basketball:</label>
+                        <select id="basketball" name="basketball">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="compsci">Computer Sci.:</label>
+                        <select id="compsci" name="compsci">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="music">Music:</label>
+                        <select id="music" name="music">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="art">Art:</label>
+                        <select id="art" name="art">
+                            <option value="-">-</option>
+                            <option value="R">R</option>
+                            <option value="O">O</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="d-flex flex-column">
+                    <legend class="mb-0 mt-2">Write In Any Other Courses Not Listed</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <p class="text-success m-5">Make checks payable to: The Patrick School</p>
+            </div>
+        </form>
+    </main>
+    <footer class="d-flex flex-column align-items-center mb-3">
+        <p class="d-flex  text-center m-0">
+            Hillside Campus: 397 Columbia Ave. Hillside, NJ 07205 • Rahway Campus: 244 Central Avenue; Rahway, NJ 07065 <br>
+            908-344-6268 (Phone) • 866-390-6582 (Fax)
+        </p>
+        <div class="d-flex">
+            <a class="pe-1" href="https://thepatrickschool.org/www.gardenstatelearningacademy.com">www.gardenstatelearningacademy.com</a> 
+              or  
+            <a class="ps-1" href="https://thepatrickschool.org/www.mygsla.com">www.mygsla.com</a>
+        </div>
+    </footer>
+</body>
+</html>
